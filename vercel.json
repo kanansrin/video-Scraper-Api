@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "scrapapp/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "scrapapp/wsgi.py"
+      }
+    ]
+}
