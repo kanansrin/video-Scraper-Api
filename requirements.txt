@@ -1,0 +1,7 @@
+django
+django-admin
+requests
+djangorestframework
+youtube_transcript_api
+transformers
+mysqlclient
