@@ -5,6 +5,6 @@ requests
 djangorestframework
 youtube_transcript_api
 transformers
-mysqlclient
+# mysqlclient
 gunicorn
 
