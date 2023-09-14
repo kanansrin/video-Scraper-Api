@@ -79,13 +79,8 @@ WSGI_APPLICATION = 'scrapapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sih2023',
-        'USER': 'fzone',
-        'PASSWORD': 'Pradip@2003',
-        'HOST':'2405:201:9004:2091:2e0:4cff:feda:30f7',
-        'PORT':'3306',
-        'OPTIONS': {'charset': 'utf8mb4'},
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
