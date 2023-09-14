@@ -1,8 +1,10 @@
 django
 django-admin
+django-cors-headers
 requests
 djangorestframework
 youtube_transcript_api
 transformers
-pymysql
+mysqlclient
+gunicorn
 
