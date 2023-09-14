@@ -1,9 +1,9 @@
 #!/bin/bash
 
-sudo cp -rf inventsoft.conf /etc/nginx/sites-available/inventsoft
-chmod 710 /var/lib/jenkins/workspace/django-cicd
+sudo cp -rf scrapapp.conf /etc/nginx/sites-available/scrapapp
+chmod 710 /var/lib/jenkins/workspace/sih2023
 
-sudo ln -s /etc/nginx/sites-available/inventsoft /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/scrapapp /etc/nginx/sites-enabled
 sudo nginx -t
 
 sudo systemctl start nginx
