@@ -7,4 +7,5 @@ youtube_transcript_api
 transformers
 # mysqlclient
 gunicorn
+mysql-client
 
