@@ -19,7 +19,7 @@ def scrape_data(request):
         
         response = requests.get(url)
         data=response.json()
-        for i in range(24):
+        for i in range(10):
             try:
                 channel_id=data["items"][i]['snippet']['channelId']
                 channel_title=data['items'][i]['snippet']['channelTitle']
