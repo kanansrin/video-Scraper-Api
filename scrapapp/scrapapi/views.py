@@ -14,8 +14,8 @@ def scrape_data(request):
     else:
         channelid=request.GET.get('channelid')
         # result=str(request.GET.get('result'))
-        # url='https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId='+channelid+'&maxResults=24&key=AIzaSyCgTNdaRSwAsHCb6m_rKcUTmEuxjaC8X6U&maxResults=24&type=video'
-        url='https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UCRWFSbif-RFENbBrSiez1DA&maxResults=25&key=AIzaSyCgTNdaRSwAsHCb6m_rKcUTmEuxjaC8X6U&maxResults=25&type=video'
+        url='https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId='+channelid+'&maxResults=24&key=AIzaSyCgTNdaRSwAsHCb6m_rKcUTmEuxjaC8X6U&maxResults=24&type=video'
+        # url='https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UCRWFSbif-RFENbBrSiez1DA&maxResults=25&key=AIzaSyCgTNdaRSwAsHCb6m_rKcUTmEuxjaC8X6U&maxResults=25&type=video'
         
         response = requests.get(url)
         data=response.json()
